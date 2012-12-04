@@ -1,51 +1,372 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Symfony drupal : " />
+<head>
+	<meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<title>reveal.js - The HTML Presentation Framework</title>
 
-    <title>Symfony drupal</title>
-  </head>
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
 
-  <body>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/henrikakselsen/symfony_drupal">View on GitHub</a>
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-          <h1 id="project_title">Symfony drupal</h1>
-          <h2 id="project_tagline"></h2>
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/henrikakselsen/symfony_drupal/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/henrikakselsen/symfony_drupal/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>reveal.js</h1>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
 
-<p>Slides for Drupalcamp Oslo 2012 presentasjon om Symfony og Drupal 8</p>
-      </section>
-    </div>
+	<body>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Symfony drupal maintained by <a href="https://github.com/henrikakselsen">henrikakselsen</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+		<div class="reveal">
 
-    
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
 
-  </body>
+				<section>
+					<h1><----</h1>
+					<ul>
+						<li class="fragment">Henrik Akselsen</li>
+						<li class="fragment">Jobber i Frontkom</li>
+						<li class="fragment">Jobbet med Drupal i 1,5 år</li>
+						<li class="fragment">Drupal.org: 410273</li>
+					</ul>
+				</section>
+				<section>
+					 <img src="img/drupal-progress.png" />
+				</section>
+				<section>
+					<h1>PHP</h1>
+					<ul>
+						<li class="fragment">Brukes av 78% av alle websider der serverspråket er kjent</li>
+						<li class="fragment">Kanskje det mest utskjelte av alle programmeringsspråk</li>
+						<li class="fragment">(Bortsett fra C++)</li>
+					</ul>
+				</section>
+				<section>
+					<blockquote>
+						The great crime of PHP is its utter banality. Its continued propularity (sic) is living proof that quality is irrelevant; cheap and popular and everywhere always wins. PHP is the Nickelback of programming languages.
+					</blockquote>
+					<p>- Jeff Atwood</p>
+				</section>
+				<section>
+					<blockquote cite="Dries">
+						As it has evolved into an increasingly powerful system, Drupal has gotten increasingly complex and is not as easy to start developing with as it once was. Many developers are nervous about continuing that trend.
+					</blockquote>
+					<p class="fragment">- Dries, 16 feb 2012</p>
+				</section>
+								<section>
+									<section>
+					<img src="img/request-flow-drupal-7.svg" />
+				</section>
+				<section>
+					<img src="img/request-flow-drupal-8.svg" />
+</section>
+				</section>
+				<section>
+					<a href="http://www.youtube.com/watch?v=ywUHDT5Xos0">Symfony+Drupal</a>
+				</section>
+				<section>
+					<img src="img/drufony.png" />
+				</section>
+				<section>
+					<blockquote>
+						It has not always been the case, but the last 5 years have been an amazing journey for PHP.
+					</blockquote>
+					<p class="fragment">Fabien Potencier, Symfony2 hovedutvikler</p>
+
+				</section>
+				<section>
+					<h1>Drupal 8</h1>
+					<h2>Core initiatives</h2>
+					<ul>
+						<li class="fragment">Configuration Management</li>
+						<li class="fragment">HTML5</li>
+						<li class="fragment">Layouts</li>
+						<li class="fragment">Mobile</li>
+						<li class="fragment">Multilingual</li>
+						<li class="fragment">Views in Core</li>
+						<li class="fragment">Web Services</li>
+						<li class="fragment"><a href="http://drupal.org/community-initiatives/drupal-core">Hjelp til</a>
+					</ul>
+				</section>
+				<section>
+					<h1>Drupal 8</h1>
+					<h2>Core initiatives</h2>
+					<ul>
+						<li class="fragment">Lar Dries Skalere</li>
+						<li class="fragment">Slipper 10000 pågående samtaler selv</li>
+						<li class="fragment">Dries koordinerer initiativeierne, eierne koordinere initiativene</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h1>MVC</h1>
+					<ul>
+						<li class="fragment">Ansvarsdeling</li>
+						<li class="fragment">Kodere kan holde på med modeller + kontrollere</li>
+						<li class="fragment">Designere kan holde på med Views</li>
+						<li class="fragment">Ruby on Rails, Express, Django</li>
+					</ul>
+				</section>
+				<section>
+					<img src="img/mvc.jpeg">
+				</section>
+
+				<section>
+					<ul>
+						<h2>Drupal 7 som "MVC"</h2>
+						<li class="fragment">Model: Database (MySQL)</li>
+						<li class="fragment">Views: Templates (tpl.php)</li>
+						<li class="fragment">Controller: "Alt annet"</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Drupal 8 som 'MVC'</h2>
+					<ul>
+						<li class="fragment">Model: ingen store endringer</li>
+						<li class="fragment">Views: Twig</li>
+						<li class="fragment">Controller: Mange elementer fra Symfony</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Er ikke phptemplate bra nok lizm?</h2>
+					<ul>
+						<li class="fragment">Templatesystem: Separere Presentasjon fra logikk</li>
+						<li class="fragment">PHP som templatespråk gir for mye kraft til presentasjonslaget</li>
+						<li class="fragment">Resultat: Messy og usikker kode</li>
+					</ul>
+				</section>
+				<section>
+					<blockquote>We hand themers a loaded gun and tell them to hammer in a nail with it. Oh, and be careful</blockquote>	
+					<p>John Albin (Drupalcon, Denver)
+					</p>
+				</section>
+
+				<section>
+					< ?php echo $var ?>
+
+				</section>
+				<section>
+					{{ var }}
+				</section>
+				<section>
+					<pre>
+<code>					
+	< ?php 
+	echo htmlspecialchars($var, ENT_QUOTES, 'UTF-8') 
+	?>
+</code>
+					</pre>
+				</section>
+				<section>
+					{{ var|escape }}
+
+				</section>
+				<section>
+					<h1>Symfony</h1>
+					<ul>
+						<li class="fragment">En mengde moduler for PHP som gjør mange oppgaver lettere og sikrere</li>
+						<li  class="fragment">Sammen utgjør alle modulene et komplett rammeverk for å utvikle sider i PHP</li>
+
+						<li class="fragment">Drupal 8 adopsjon er en stor seier for Symfony</li>
+						<li class="fragment">Sunshine PHP vil ha et eget spor med kun symfony</li>
+						<li class="fragment">Første stabile release tidlig 2013</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Symfony</h1>
+					<ul>
+						<li class="fragment">Request/Response, snarere enn MVC</li>
+						<li class="fragment">Objektorientert</li>
+						<ul>
+							<li class="fragment">Request-objekt</li>
+							<li class="fragment">Response-objekt</li>
+						</ul>
+						<li class="fragment">Vil håndtere svært mye av lav-nivå funksjonalitet i Drupal 8</li>
+						<li class="fragment">Inkludert og integrert - ikke egen installasjon</li>
+					</ul>
+				</section>
+				<section>
+					<img src="img/oreilly.jpeg" />
+				</section>
+
+				<section>
+					<h2>Classloader</h2>
+					<ul>
+						<li class="fragment">Erstatter registeret!</li>
+						<li class="fragment">Navnekonvensjoner</li>
+						<li class="fragment"><a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md">PSR-0</a></li>
+						<li class="fragment"><a href="http://drupal.org/project/classloader">Kan brukes i Drupal 7</a></li>
+						</ul>
+
+					</section>
+					<section>
+						<h2>HttpFoundation</h2>
+						<ul>
+							<li class="fragment">Definerer et objekt-orienter lag over HTTP specification.</li>
+							<li class="fragment">request/response</li>
+							<li class="fragment">prepare() - sørger for at responsen følger http spec</li>
+							<li class="fragment">session management</li>
+							<li class="fragment">'Erstatter' Globale variabler</li>
+							<ul>
+								<li class="fragment"><code>clientIP = $_SERVER['REMOTE_ADDR']</code></li>
+							</ul>
+							<li class="fragment"><a href="http://symfony.com/doc/current/components/http_foundation/introduction.html">Mer her</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Routing</h2>
+						<ul>
+							<li class="fragment">Skille utseendet på en URL fra håndteringen</li>
+							<li class="fragment">Mapper en HTTP request til et sett med konfigurasjonsvariabler.</li>
+							<li class="fragment"><a href="http://symfony.com/doc/current/components/routing/introduction.html">Mer her</a></li>
+
+						</ul>
+					</section>
+					<section>
+						<h2>EventDispatcher</h2>
+						<ul>
+							<li class="fragment">Symfonys hook system</li>
+							<li class="fragment">Observer Pattern</li>
+							<li class="fragment">Vil ikke erstatte hooksystemet fullstendig i denne omgang</li>
+							<li class="fragment">vs hooks: 
+								<ul>
+									<li class="fragment">objektorientert</li> 
+									<li class="fragment">testbart</li>
+									<li class="fragment">selvforklarende</li>
+									<li class="fragment">mulig å kjøre flere</li>
+									<li class="fragment">Listeners i motsetning til function_exists</li>
+								</ul>
+								<li class="fragment"><a href="http://symfony.com/doc/current/components/event_dispatcher/index.html">Mer her</a></li>
+							</ul>
+
+						</section>
+						<section>
+							<h2>DependcyInjector</h2>
+							<ul>
+								<li class="fragment">The Dependency Injection component allows you to standardize and centralize the way objects are constructed in your application.</li>
+								<li class="fragment">Array av objekter (på steroider)</li>
+								<li class="fragment"><a href="http://symfony.com/doc/2.0/components/dependency_injection/index.html">Mer her</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>HttpKernel</h2>
+							<ul>
+								<li class="fragment">Den dynamiske delen av HTTTP spesifikasjonen</li>
+								<li class="fragment">En tynn wrapper over request/response</li>
+								<li class="fragment">Har som 'mål' å konvertere et requestobjekt til Responseobjekt</li>
+								<li class="fragment">handle() tar en Request returnerer en Response.</li>
+								<li class="fragment"><a href="http://api.symfony.com/2.0/Symfony/Component/HttpKernel.html">Mer her</a></li>
+							</ul>
+
+						</section>
+						<section>
+							<h2>HTTP Testing</h2>
+							<ul>
+								<li class="fragment">Integrer med PHPUnit</li>
+								<li class="fragment">Unit tester og funksjonelle tester</li>
+								<li class="fragment">$crawler = $client->request('GET', '/demo/hello/world');</li>
+								<li class="fragment">$this->assertEquals(42, $result);</li>
+								<li class="fragment"><a href="http://symfony.com/doc/2.0/book/testing.html">Mer her</a></li>
+
+							</ul>
+						</section>
+
+						<section>
+							<h2>Caching</h2>
+								<ul>
+									<li class="fragment">Ikke caching på applikasjonsnivå, forholder seg til http-spesifikasjonen</li>
+									<li class="fragment">Cache-Control Expires ($response->setClientTtl)</li>
+									<li class="fragment">Validation</li>
+									<li class="fragment">Expiration + validation</li>
+									<li class="fragment">Mål: Aldri lage den samme responsen 2 ganger</li>
+									<li class="fragment">ESI - Edge Side includes</li>
+									<ul>
+										<li class="fragment">Ikke cache hele siden</li>
+									</ul>
+									<li class="fragment"><a href="http://symfony.com/doc/2.0/book/http_cache.html">Mer her</a></li>
+								</ul>
+						</section>
+						<section>
+							<section>
+								<img src="img/blocks-drupal-7.svg" />
+							</section>
+										<section>
+								<img src="img/blocks-drupal-8.svg" />
+							</section>
+						</section>
+						<section>
+							<h2>Ressurser</h2>
+							<ul>
+								<li class="fragment"><a href="http://drupal.org/node/1823416">Twig coding standards</a></li>
+								<li class="fragment"><a href="http://fabien.potencier.org/article/34/templating-engines-in-php">Templating Engines in PHP</a> og <a href="http://fabien.potencier.org/article/35/templating-engines-in-php-follow-up">Follow-up</a></li>
+								<li class="fragment"><a href="http://renebakx.nl/43/twig-for-drupal-example/">Twig for Drupal, simple usage examples</a></li>
+								<li class="fragment"><a href="http://peterlozano.com/symfony-drupal-8-related-issues-posts">Timeline of Symfony in Drupal 8 related issues and posts</a></li>
+								<li class="fragment"><a href="http://munich2012.drupal.org/program/sessions/introducing-symfony2">Introducing Symfony2</a></li>
+								<li class="fragment"><a href="http://munich2012.drupal.org/content/drupal-has-dependencies-lets-manage-them">Drupal has dependencies - Let's manage them</a></li>
+								<li class="fragment"><a href="http://symfony.com/blog/symfony2-meets-drupal-8">Symfony meets Drupal</a></li>
+</ul>
+</section>
+<section>
+	<ul>
+		<li>Færre drupalismer</li>
+		<li>Unngå NIH</li>
+		<li>Lettere å samarbeide med andre siter</li>
+	</ul>
+</section>
+<section>
+	<h1>Ferdig</h1>
+</section>
+
+								<!-- Example of nested vertical slides -->
+								
+	</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+					]
+				});
+
+</script>
+
+</body>
 </html>
